@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 tags meta acima *devem* vir em primeiro lugar na head; -->
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Blog | Amanda Café</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link ref="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="../css/mystyles.css">
+
+  </head>
+  <body <span class="highlight">ng-app="tutorialWebApp"</span>>
+
+    <div <span class="highlight">ng-include='"templates/header.html"'</span>></div>
+    <div <span class="highlight">ng-view</span>></div>
+    <div <span class="highlight">ng-include='"templates/footer.html"'</span>></div>
+
+    <!--jQuery-->
+    <script src="../jquery/dist/jquery.min.js"></script>
+    <!-- javaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <!-- angularJS -->
+    <span class="highlight">
+      <script src="../bower_components/angular/angular.min.js"></script>
+    </span>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+  </body>
+</html>

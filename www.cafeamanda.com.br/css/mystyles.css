@@ -1,0 +1,218 @@
+/**
+*
+*  NAVBAR settings
+*
+**/
+  .navbar {
+    -webkit-box-shadow: 0 6px 4px -4px #bbb;
+    -moz-box-shadow: 0 6px 4px -4px #bbb;
+    box-shadow: 0 6px 4px -4px #bbb;
+    margin-bottom: 0px;
+  }
+
+  .navbar-inverse {
+    background: #fff;
+    border:0;
+  }
+
+  .navbar-inverse .navbar-brand {
+    text-shadow: 0 0 0;
+    color: #454545;
+    font-family: 'Amatic SC', cursive;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+  }
+
+  .navbar-inverse .navbar-brand:hover,
+  .navbar-inverse .navbar-brand:focus {
+    color: #a27968;
+  }
+
+  .navbar-inverse .navbar-nav > li > a {
+    color: #454545;
+    text-shadow: 0 0 0;
+  }
+
+  .navbar-inverse .navbar-nav > li > a:hover,
+  .navbar-inverse .navbar-nav > li > a:focus {
+    color: #a27968;
+    background-color: inherit;
+  }
+
+  .navbar-inverse .navbar-nav > .active > a {
+    background: #a27968;
+    color: #fff;
+  }
+
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    background: #B08979;
+    color: #fff;
+  }
+
+  .navbar-inverse .navbar-nav > .open > a {
+    background: #a27968;
+    color: #fff;
+  }
+  .navbar-inverse .navbar-nav > .open > a:hover {
+    background: #fff;
+    color: #a27968;
+  }
+
+  .navbar-inverse .navbar-collapse {
+    border-color: #bbb;
+  }
+
+  .navbar-inverse .navbar-toggle {
+    border-color: #a27968;
+  }
+
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #a27968;
+  }
+
+  .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #a27968;
+  }
+
+  .navbar-inverse .navbar-toggle:focus .icon-bar, .navbar-inverse .navbar-toggle:hover .icon-bar {
+    background-color: #fff;
+  }
+  .social-icons > li > a {
+    padding-top: 10px;
+    padding-bottom:0;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+  }
+  .social-icons img {
+    max-height: 30px;
+    padding:0;
+  }
+
+/**
+*
+*  BODY settings
+*
+**/
+
+  /*
+  index.html
+  */
+    .jumbotron {
+      background: #fff;
+      color: black;
+      margin-bottom: 30px;
+      margin-top: 70px;
+      outline: 1px dashed #fff;
+      outline-offset: -10px;
+    }
+    .jumbotron .row-header h1 {
+      font-size: 110px;
+      color: black;
+      font-family: 'Amatic SC', cursive;
+    }
+    .jumbotron .row-header h3 {
+      font-family: 'Jura', sans-serif;
+      color: #545454;
+    }
+    #header-text {
+      padding-top: 51.5px;
+    }
+
+  /* portfolio.html */
+    .jumbo-portfolio {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 48px 0;
+      margin-top: 55px;
+      -webkit-box-shadow: 0 16px 18px -14px #bbb;
+      -moz-box-shadow: 0 16px 18px -14px #bbb;
+      box-shadow: 0 16px 18px -14px #bbb;
+    }
+    .jumbo-portfolio h1 {
+      font-size: 72px;
+      font-family: 'Poiret One', cursive;
+      padding-top: 84px;
+      padding-bottom: 84px;
+    }
+    .gallery {
+      margin-bottom: 70px;
+    }
+    .carousel-indicators li {
+      background-color: #fff;
+      border: 1px solid #000;
+    }
+    .carousel-indicators .active {
+      background-color: #000;
+    }
+
+  /* saibamais.html */
+    .container-saiba {
+      margin-top: 70px;
+    }
+    .container-saiba h2 {
+      font-family: 'Lobster', cursive;
+      color: #151515;
+      margin: 40px 30px;
+    }
+    #div-contato h1 {
+      font-family: 'Lobster', cursive;
+      font-weight:lighter;
+      color: #151515;
+      margin: 40px 30px;
+    }
+    .jumbo-saiba {
+      margin-top: 55px;
+      background-color: black;
+      -webkit-box-shadow: 0 16px 18px -14px #bbb;
+      -moz-box-shadow: 0 16px 18px -14px #bbb;
+      box-shadow: 0 16px 18px -14px #bbb;
+      margin-bottom: 0px;
+    }
+    .jumbo-saiba .container .row-header h1 {
+      color: #fff;
+      padding-top: 0;
+    }
+    .jumbo-saiba .container .row-header h2 {
+      margin: 20px 5px;
+      font-weight: lighter;
+      font-size: 48px;
+      font-family: 'Fredericka the Great', cursive;
+      color: #aaa;
+    }
+    .jumbo-saiba .container .row-header h3 {
+      font-size: 36px;
+      color:#ccc;
+      text-align: center;
+      font-family: 'Poiret One', cursive;
+      margin-top: 20px;
+    }
+    .media .media-list li {
+      padding: 15px 10px;
+    }
+    .media .media-list img {
+      height: 100px;
+    }
+    .media .media-list .media-heading {
+        font-family: 'Fredericka the Great', cursive;
+        text-shadow: 0 0 0;
+    }
+    .media .media-list p {
+      font-family: 'Spinnaker', sans-serif;
+    }
+    .media .media-list .media-left {
+    padding-left: 10px;
+    }
+    .media .media-list .media-body {
+    padding: 10px;
+    }
+
+  /* thanks.html */
+    .row-thanks {
+      font-family: 'Raleway', sans-serif;
+    }
+    .row-thanks h4 {
+      color: grey;
+    }

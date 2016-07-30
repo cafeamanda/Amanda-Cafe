@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 tags meta acima *devem* vir em primeiro lugar na head; -->
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Amanda Café | Front-end Web Developer</title>
+
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="css/img-styles.css" rel="stylesheet">
+    <link href="css/media-queries.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- barra de navegação -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <p>
+            <img src="images/social/it-all-starts-with-coffee-invert.ico" height=30 style="padding-bottom:4px;">
+            Amanda Café
+          </p>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+          <li><a href="saibamais.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Saiba mais</a></li>
+          <li class="active"><a href="#"><i class="fa fa-folder-open" aria-hidden="true"></i> Portfólio</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right social-icons">
+          <li>
+            <a href="http://instagram.com/cafeamanda" target="_blank">
+              <img src="images/social/instagram.png">
+            </a>
+          </li>
+          <li>
+            <a href="http://linkedin.com/in/cafeamanda" target="_blank">
+              <img src="images/social/linkedin.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- fim da barra de navegação -->
+  <div class="jumbotron jumbo-portfolio">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <h1>
+          <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+          Portfólio
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="container gallery">
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+        <!-- Trigger -->
+        <img id="image01" src="images/portfolio/form-retec.png" class="img-responsive">
+        <!-- Modal -->
+        <div id="modal01" class="modal">
+          <span class="close" onclick="document.getElementById('modal01').style.display='none'">&times;</span>
+          <img class="modal-content" id="img01">
+          <div>
+            <h4>Website da empresa Retec Jr.</h4>
+            <p>Design da página de serviços da Retec Jr., a empresa junior do curso de Engenharia de Energias Renováveis da Universidade Federal do Ceará - UFC, que faz orçamento de placas solares gratuitamente. Para saber mais, acesse o site: <a href="http://retecjr.com" target="_blank">www.retecjr.com</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <!-- Trigger -->
+        <img id="image02" src="images/portfolio/gavea-radios.png" class="img-responsive">
+        <!-- Modal -->
+        <div id="modal02" class="modal">
+          <span class="close" onclick="document.getElementById('modal02').style.display='none'">&times;</span>
+          <img class="modal-content" id="img02">
+          <div>
+            <h4>Website da empresa Gávea Rádios</h4>
+            <p>Design do site da Gávea Rádios, especializada em locação de rádios de telecomunicação no Rio de Janeiro, RJ. Para saber mais, acesse o site: <a href="http://gavearadios.com.br" target="_blank">www.gavearadios.com.br</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <!-- Trigger -->
+        <img id="image03" src="images/portfolio/banner-elbia.png" class="img-responsive">
+        <!-- Modal -->
+        <div id="modal03" class="modal">
+          <span class="close" onclick="document.getElementById('modal03').style.display='none'">&times;</span>
+          <img class="modal-content" id="img03">
+          <div>
+            <h4>Banner de Evento</h4>
+            <p>Design de banner para divulgação da palestra da Presidente Executiva da Associação Brasileira de Energia Eólica, Elbia Gannoum. Evento realizado pela empresa Retec Jr.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+        <!-- Trigger -->
+        <img id="image04" src="images/portfolio/camisa-retec-2.png" class="img-responsive">
+        <!-- Modal -->
+        <div id="modal04" class="modal">
+          <span class="close close-camisa" onclick="document.getElementById('modal02').style.display='none'">&times;</span>
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+            </ol>
+            <!-- wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img class="modal-content" id="img04">
+              </div>
+              <div class="item">
+                <img src="images/portfolio/camisa-retec.png" class="modal-content">
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>Camisetas</h4>
+            <p>Design de camisetas bem-humoradas para alunos do curso de Engenharia de Energias Renováveis da Universidade Federal do Ceará - UFC.</p>
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+
+      </div>
+      <div class="col-xs-12 col-sm-3">
+
+      </div>
+    </div>
+  </div>
+  <!--jQuery-->
+  <script src="jquery/dist/jquery.min.js"></script>
+  <!--javaScript-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="scripts/myscript.js"></script>
+  <!--googleAnalytics-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })
+    (window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-81435653-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
