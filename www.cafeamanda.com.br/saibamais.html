@@ -213,10 +213,27 @@
           </div>
           <div class="form-group">
             <label for="assunto" class="col-xs-12 col-sm-3 control-label">
-              Assunto:
+            Assunto:
             </label>
             <div class="col-xs-12 col-sm-9">
-              <input type="text" id="assunto" name="assunto " class="form-control" required="">
+              <select id="assunto" name="assunto" onchange="showfield(this.options[this.selectedIndex].value)" class="form-control" required="">
+                <option selected="selected" disabled="disabled" value="(Sem assunto)">
+                  Meu site...
+                </option>
+                <option value="Meu site já existe e precisa de melhora.">
+                  Já existe e precisa de melhora.
+                </option>
+                <option value="Meu site ainda não existe, mas já tenho uma ideia.">
+                  Ainda não existe, mas já tenho uma ideia.
+                </option>
+                <option value="Meu site ainda não existe e quero ajuda para pensá-lo.">
+                  Ainda não existe e quero ajuda para pensá-lo.
+                </option>
+                <option value="Outro...">
+                  Outro...
+                </option>
+              </select>
+              <div id="ifOther" class="form-group"></div>
             </div>
           </div>
           <div class="form-group">
@@ -233,7 +250,7 @@
             </div>
           </div>
           <input type="hidden" name="_next" value="thanks.html"/>
-          <input type="hidden" name="_subject" value="[Formulário] Amanda Café | Front-end Web Developer"/>
+          <input type="hidden" name="_subject" value="[Formulário] Amanda Café | Dúvidas e Orçamentos"/>
         </form>
       </div>
       </div>
@@ -253,6 +270,19 @@
     (window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-81435653-1', 'auto');
     ga('send', 'pageview');
+  </script>
+  <!-- Hidden field in Formulário -->
+  <script type="text/javascript">
+    function showfield(name){
+      if(name=='Outro...') {
+        document.getElementById('ifOther')
+        .innerHTML='<label for="Outro..." class="col-xs-12 col-sm-3 control-label">Qual?</label><div class="col-xs-12 col-sm-9"><input type="text" name="Outro..." id="Outro..." class="form-control" required=""/>';
+    }
+      else {
+        document.getElementById('ifOther')
+        .innerHTML='';
+      }
+    }
   </script>
 </body>
 

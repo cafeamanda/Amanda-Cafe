@@ -30,11 +30,8 @@
   .jumbo-index #header-text {
     padding-top: 0;
   }
-  .jumbo-saiba .row-header h2 {
-    font-size: 42px;
-  }
   .jumbo-saiba .container h1 {
-    outline: 1px dashed #fff;
+    outline: 1px dashed #aaa;
     outline-offset: 16px;
     margin: 0px 15px;
   }
@@ -47,8 +44,13 @@
   .jumbo-saiba .container .row-header h1 {
     font-size: 72px;
   }
+  .jumbo-saiba .container .row-header h2 {
+    font-size: 42px;
+    padding-bottom: 20px;
+  }
   .jumbo-saiba .container .row-header h3 {
-    font-size: 24px;
+    font-size: 26px;
+    padding-top: 20px;
   }
   .jumbo-portfolio h1 {
     font-size: 56px;
@@ -87,7 +89,7 @@
     font-size: 36px;
   }
   .jumbo-saiba .container h1 {
-    outline: 1px dashed #fff;
+    outline: 1px dashed #aaa;
     outline-offset: 5px;
   }
   .jumbo-saiba .container .row-header h1 img {

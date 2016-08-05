@@ -2,10 +2,10 @@
  * Globals
  */
 
-body {
+/*body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
-}
+}*/
 
 h1, .h1,
 h2, .h2,
@@ -141,12 +141,45 @@ h6, .h6 {
   margin-bottom: 60px;
 }
 .blog-post-title {
-  margin-bottom: 5px;
+  padding:15px;
   font-size: 40px;
+  border-radius: 16px;
+  font-family: 'Comfortaa', cursive;
 }
-.blog-post-meta {
-  margin-bottom: 20px;
-  color: #999;
+.blog-post-summary {
+  font-family: 'Libre Baskerville', serif;
+  padding:15px;
+  font-size: 16px;
+  color: #606060;
+  text-align: left !important;
+}
+.blog-post-date {
+  float: right;
+  color: #808080;
+  font-family: 'Comfortaa', cursive;
+  padding-top:15px;
+  padding-right: 15px;
+}
+.blog-post-date:hover {
+  color: #606060;
+}
+.blog-post-text {
+  clear:right;
+  border-top: 1px solid #eee;
+  padding:15px;
+  text-align: justify;
+  font-family: 'Noticia Text', serif;
+  font-size:15px;
+  color: #292929;
+}
+.blog-post-text a:hover,
+.blog-post a:focus {
+  color:#641010;
+  text-decoration-style: dashed;
+}
+.blog-post-text h3 {
+  margin-top:30px;
+  margin-bottom:15px;
 }
 
 
