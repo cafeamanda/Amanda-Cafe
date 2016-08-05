@@ -27,13 +27,13 @@
 
 /* MODALS */
 
-#image01, #image02, #image03, #image04 {
+#image01, #image02, #image03, #image04, iframe {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#image01:hover, #image02:hover, #image03:hover, #image04:hover {
+#image01:hover, #image02:hover, #image03:hover, #image04:hover, iframe:hover {
   opacity: 0.7;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

@@ -104,15 +104,19 @@
       color: black;
       margin-bottom: 30px;
       margin-top: 70px;
-      outline: 1px dashed #fff;
+      outline: 1px dashed #aaa;
       outline-offset: -10px;
     }
-    .jumbotron .row-header h1 {
+    .jumbo-index {
+      outline-color: #fff;
+    }
+    .jumbo-index .row-header h1,
+    .jumbo-saiba .container .row-header h1 {
       font-size: 110px;
       color: black;
       font-family: 'Amatic SC', cursive;
     }
-    .jumbotron .row-header h3 {
+    .jumbo-index .row-header h3 {
       font-family: 'Jura', sans-serif;
       color: #545454;
     }
@@ -139,6 +143,15 @@
     }
     .gallery {
       margin-bottom: 70px;
+    }
+    .gallery h1 {
+      font-family: 'Poiret One', cursive;
+    }
+    .gallery hr {
+      padding-bottom: 20px;
+    }
+    .gallery, .gallery iframe, .gallery object, .gallery embed {
+      max-width: 100%;
     }
     .carousel-indicators li {
       background-color: #fff;

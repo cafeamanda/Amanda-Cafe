@@ -1,0 +1,30 @@
+{
+  "name": "blog-app",
+  "homepage": "http://blog.cafeamanda.com.br",
+  "authors": [
+    "Amanda Café"
+  ],
+  "description": "blog.cafeamanda.com.br",
+  "main": "index.html",
+  "keywords": [
+    "blog",
+    "amanda",
+    "café",
+    "web",
+    "designer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angular-resource": "^1.5.8",
+    "angular": "1.5.8"
+  }
+}
