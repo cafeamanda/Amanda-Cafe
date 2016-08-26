@@ -14,6 +14,34 @@
   #header-text {
     padding-top: 37px;
   }
+  .jumbo-saiba img {
+    margin-top:0;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .jumbo-saiba h1 {
+    font-size: 70px;
+    margin:0 15px;
+    padding-top: 20px;
+  }
+  .jumbo-saiba h3 {
+    font-size:20px;
+    margin:0 15px;
+  }
+  #saiba-title h1 {
+    font-size:42px;
+    margin:15px;
+  }
+  #saiba-title p {
+    padding:15px;
+  }
+  #saiba-row h1 {
+    font-size: 24px;
+  }
+  #contactButton {
+    margin-top:40px;
+  }
 }
 
 @media (max-width: 599px) and (min-width: 321px) {
@@ -30,27 +58,30 @@
   .jumbo-index #header-text {
     padding-top: 0;
   }
-  .jumbo-saiba .container h1 {
-    outline: 1px dashed #aaa;
-    outline-offset: 16px;
-    margin: 0px 15px;
-  }
-  .jumbo-saiba .container .row-header h1 img {
+  .jumbo-saiba img {
+    margin-top:0;
     display:block;
     margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
+    margin-right:auto;
   }
-  .jumbo-saiba .container .row-header h1 {
-    font-size: 72px;
+  .jumbo-saiba h1 {
+    font-size: 70px;
+    margin:0 15px;
   }
-  .jumbo-saiba .container .row-header h2 {
-    font-size: 42px;
-    padding-bottom: 20px;
+  .jumbo-saiba h3 {
+    font-size:24px;
+    margin:0 15px;
   }
-  .jumbo-saiba .container .row-header h3 {
-    font-size: 26px;
-    padding-top: 20px;
+  #saiba-title h1 {
+    font-size:40px;
+    margin:15px;
+  }
+  #saiba-title p {
+    padding:15px;
+    text-align: center;
+  }
+  #saiba-row h1 {
+    font-size: 24px;
   }
   .jumbo-portfolio h1 {
     font-size: 56px;
@@ -58,17 +89,13 @@
   .gallery .row .col-xs-12 {
     margin: 10px;
   }
-  .modal-content {
-    width: 80%;
+  #contactButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .modal div {
-    width: 80%;
-  }
-  .close {
-    right:20px;
-  }
-  .close-camisa {
-    right: 50px;
+  #contato-col-2 {
+    text-align: center;
   }
 }
 
@@ -85,23 +112,29 @@
   .jumbo-index #header-text {
     padding-top: 0;
   }
-  .jumbo-saiba .container .row-header h2 {
-    font-size: 36px;
-  }
-  .jumbo-saiba .container h1 {
-    outline: 1px dashed #aaa;
-    outline-offset: 5px;
-  }
-  .jumbo-saiba .container .row-header h1 img {
+  .jumbo-saiba img {
+    margin-top:0;
     display:block;
     margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
+    margin-right:auto;
   }
-  .jumbo-saiba .container .row-header h1 {
-    font-size: 72px;
+  .jumbo-saiba h1 {
+    font-size: 60px;
+    margin:0 15px;
   }
-  .jumbo-saiba .container .row-header h3 {
+  .jumbo-saiba h3 {
+    font-size:18px;
+    margin:0 15px;
+  }
+  #saiba-title h1 {
+    font-size:32px;
+    margin:15px;
+  }
+  #saiba-title p {
+    text-align: center;
+    padding:15px;
+  }
+  #saiba-row h1 {
     font-size: 24px;
   }
   .jumbo-portfolio h1 {
@@ -110,16 +143,12 @@
   .gallery .row .col-xs-12 {
     margin: 10px;
   }
-  .modal-content {
-    width: 80%;
+  #contactButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .modal div {
-    width: 80%;
-  }
-  .close {
-    right:20px;
-  }
-  .close-camisa {
-    right: 50px;
+  #contato-col-2 {
+    text-align: center;
   }
 }

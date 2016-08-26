@@ -33,16 +33,6 @@ angular.module('blogApp', ['ui.router'])
       }
     })
 
-    .state('app.blog', {
-      url: 'blog',
-      views: {
-        'content@': {
-          templateUrl: 'app/partials/blog.html',
-          controller: 'BlogCtrl'
-        }
-      }
-    })
-
     .state('app.post01', {
       url:'pensando-o-seu-site',
       views: {
@@ -53,7 +43,7 @@ angular.module('blogApp', ['ui.router'])
     })
 
     .state('app.post02', {
-      url:'10-excelentes-recursos-de-engajamento-para-o-seu-site',
+      url:'7-ideias-para-engajar-seus-usuarios',
       views: {
         'content@': {
           templateUrl: 'app/partials/blog/post02.html'
