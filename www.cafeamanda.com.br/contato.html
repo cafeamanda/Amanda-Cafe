@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 tags meta acima *devem* vir em primeiro lugar na head; -->
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Contato | Amanda Café</title>
+
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="css/img-styles.css" rel="stylesheet">
+    <link href="css/media-queries.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- barra de navegação -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <p>
+            <img src="images/social/it-all-starts-with-coffee-invert.ico" height=30 style="padding-bottom:4px;">
+            Amanda Café
+          </p>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
+          <li><a href="web-design.html"><i class="fa fa-laptop" aria-hidden="true"></i> Web Design</a></li>
+          <li class="active"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Contato</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right social-icons">
+          <li>
+            <a href="http://instagram.com/cafeamanda" target="_blank">
+              <img src="images/social/instagram.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- fim da barra de navegação -->
+  <!-- Formulário -->
+  <div class="container" id="form-contato">
+    <div class="row row-content">
+      <div class="col-xs-12 col-sm-6">
+        <p class="spinnaker text-right" style="margin-bottom:20px;">Preencha o formulário abaixo para tirar todas <br>as suas dúvidas e solicitar um orçamento!</p>
+        <div class="col-xs-12 col-sm-12">
+          <form action="https://formspree.io/contato@cafeamanda.com.br" method="POST" class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="Nome" class="col-xs-12 col-sm-3 control-label">
+                Nome:
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <input type="text" id="Nome" name="Nome" placeholder="Seu nome" class="form-control" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-xs-12 col-sm-3 control-label">
+                E-mail:
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <input type="email" id="email" name="_replyto" placeholder="username@email.com" class="form-control" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="telefone" class="col-xs-12 col-sm-3 control-label">
+                Telefone:
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <input type="text" id="telefone" name="telefone" class="form-control js-cel-number js-tel-number" placeholder="(55) 55555-5555">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="assunto" class="col-xs-12 col-sm-3 control-label">
+                Assunto:
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <select id="assunto" name="assunto" onchange="showfield(this.options[this.selectedIndex].value)" class="form-control" required="">
+                  <option selected="selected" disabled="disabled" value="(Sem assunto)">
+                    Meu site...
+                  </option>
+                  <option value="Meu site já existe e precisa de melhora.">
+                    Já existe e precisa de melhora.
+                  </option>
+                  <option value="Meu site ainda não existe, mas já tenho uma ideia.">
+                    Ainda não existe, mas já tenho uma ideia.
+                  </option>
+                  <option value="Meu site ainda não existe e quero ajuda para pensá-lo.">
+                    Ainda não existe e quero ajuda para pensá-lo.
+                  </option>
+                  <option value="Outro...">
+                    Outro...
+                  </option>
+                </select>
+                <div id="ifOther" class="form-group"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mensagem" class="col-xs-12 col-sm-3 control-label">
+                Mensagem:
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <textarea name="mensagem " class="form-control" required="" rows="12"></textarea>
+              </div>
+            </div>
+            <div class="form-group pull-right">
+              <div class="col-xs-12">
+                <button type="submit" class="btn btn-info">Enviar</button>
+              </div>
+            </div>
+            <input type="hidden" name="_next" value="thanks.html"/>
+            <input type="hidden" name="_subject" value="[Formulário] Amanda Café | Dúvidas e Orçamentos"/>
+          </form>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-sm-offset-1" id="contato-col-2">
+        <h1 style="padding:0;margin:0;">Se preferir,</h1>
+        <br>
+        <p>Contate-me através do e-mail: <strong>contato@cafeamanda.com.br</strong></p>
+        <p>ou do telefone: <strong>(85) 98210-6080</strong>
+        <p><i class="fa fa-exclamation-circle"></i><em> Atendimento em todo o Brasil.</em></p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row row-footer">
+      <p class="text-center">© Copyright 2016. <a href="#">Café</a></p>
+    </div>
+  </div>
+  <!--jQuery-->
+  <script src="jquery/dist/jquery.min.js"></script>
+  <!--javaScript-->
+  <script src="js/bootstrap.min.js"></script>
+  <!--googleAnalytics-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })
+    (window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-81435653-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Hidden field in Formulário -->
+  <script type="text/javascript">
+    function showfield(name){
+      if(name=='Outro...') {
+        document.getElementById('ifOther')
+        .innerHTML='<label for="Outro..." class="col-xs-12 col-sm-3 control-label">Qual?</label><div class="col-xs-12 col-sm-9"><input type="text" name="Outro..." id="Outro..." class="form-control" required=""/>';
+    }
+      else {
+        document.getElementById('ifOther')
+        .innerHTML='';
+      }
+    }
+  </script>
+</body>
+</html>
