@@ -52,6 +52,7 @@
         <ul class="nav navbar-nav">
           <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
           <li><a href="web-design.html"><i class="fa fa-laptop" aria-hidden="true"></i> Web Design</a></li>
+          <li><a href="design-grafico.html"><i class="fa fa-pencil" aria-hidden="true"></i> Design Gráfico</a></li>
           <li class="active"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Contato</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right social-icons">
@@ -65,12 +66,12 @@
     </div>
   </nav><!-- fim da barra de navegação -->
   <!-- Formulário -->
-  <div class="container" id="form-contato">
+  <div class="container">
     <div class="row row-content">
       <div class="col-xs-12 col-sm-6">
-        <p class="spinnaker text-right" style="margin-bottom:20px;">Preencha o formulário abaixo para tirar todas <br>as suas dúvidas e solicitar um orçamento!</p>
+        <p id="contato-p" class="text-right">Preencha o formulário abaixo para tirar todas <br>as suas dúvidas e solicitar um orçamento!</p>
         <div class="col-xs-12 col-sm-12">
-          <form action="https://formspree.io/contato@cafeamanda.com.br" method="POST" class="form-horizontal" role="form">
+          <form id="form-contato" action="https://formspree.io/contato@cafeamanda.com.br" method="POST" class="form-horizontal" role="form">
             <div class="form-group">
               <label for="Nome" class="col-xs-12 col-sm-3 control-label">
                 Nome:
@@ -139,8 +140,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-5 col-sm-offset-1" id="contato-col-2">
-        <h1 style="padding:0;margin:0;">Se preferir,</h1>
-        <br>
+        <h1>Se preferir,</h1>
         <p>Contate-me através do e-mail: <strong>contato@cafeamanda.com.br</strong></p>
         <p>ou do telefone: <strong>(85) 98210-6080</strong>
         <p><i class="fa fa-exclamation-circle"></i><em> Atendimento em todo o Brasil.</em></p>
