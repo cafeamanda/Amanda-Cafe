@@ -42,6 +42,12 @@
   #contactButton {
     margin-top:40px;
   }
+  .jumbo-blog h1 {
+    font-size: 80px !important;
+  }
+  .panel-body {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 599px) and (min-width: 321px) {
@@ -97,6 +103,12 @@
   #contato-col-2 {
     text-align: center;
   }
+  .jumbo-blog h1 {
+    font-size: 48px !important;
+  }
+  .blog-post-title {
+    font-size: 42px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -150,5 +162,11 @@
   }
   #contato-col-2 {
     text-align: center;
+  }
+  .jumbo-blog h1 {
+    font-size: 42px !important;
+  }
+  .blog-post-title {
+    font-size: 36px;
   }
 }
