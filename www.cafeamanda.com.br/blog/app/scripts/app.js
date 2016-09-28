@@ -26,6 +26,9 @@ angular.module('blogApp', ['ui.router'])
     .state('app.about', {
       url: 'about',
       views: {
+        'header@': {
+          templateUrl: 'app/templates/post-header.html'
+        },
         'content@': {
           templateUrl: 'app/partials/about.html',
           controller: 'PageCtrl'
@@ -36,6 +39,9 @@ angular.module('blogApp', ['ui.router'])
     .state('app.post01', {
       url:'primeiros-passos',
       views: {
+        'header@': {
+          templateUrl: 'app/templates/post-header.html'
+        },
         'content@': {
           templateUrl: 'app/partials/posts/post01.html'
         }
@@ -45,6 +51,9 @@ angular.module('blogApp', ['ui.router'])
     .state('app.post02', {
       url:'conquistando-o-usuario',
       views: {
+        'header@': {
+          templateUrl: 'app/templates/post-header.html'
+        },
         'content@': {
           templateUrl: 'app/partials/posts/post02.html'
         }
@@ -54,8 +63,23 @@ angular.module('blogApp', ['ui.router'])
     .state('app.post03', {
       url:'o-sobre-nos',
       views: {
+        'header@': {
+          templateUrl: 'app/templates/post-header.html'
+        },
         'content@': {
           templateUrl: 'app/partials/posts/post03.html'
+        }
+      }
+    })
+
+    .state('app.post04', {
+      url:'designer-pra-que',
+      views: {
+        'header@': {
+          templateUrl: 'app/templates/post-header.html'
+        },
+        'content@': {
+          templateUrl: 'app/partials/posts/post04.html'
         }
       }
     })

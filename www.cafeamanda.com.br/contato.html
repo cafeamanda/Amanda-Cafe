@@ -12,14 +12,7 @@
     <title>Contato | Amanda Café</title>
 
     <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Annie+Use+Your+Telescope|Bree+Serif|Comfortaa|Fredericka+the+Great|Crafty+Girls|Jura|Libre+Baskerville|Lobster|Noticia+Text|Pacifico|Playfair+Display|Poiret+One|Quicksand|Raleway|Rochester|Spinnaker|Walter+Turncoat" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -70,6 +63,12 @@
   </nav><!-- fim da barra de navegação -->
   <!-- Formulário -->
   <div class="container">
+    <div id="contato-page-title" class="row row-content">
+      <div class="col-xs-12 col-sm-offset-1">
+        <h1>Contato</h1>
+        <hr>
+      </div>
+    </div>
     <div class="row row-content">
       <div class="col-xs-12 col-sm-6">
         <p id="contato-p" class="text-right">Preencha o formulário abaixo para tirar todas <br>as suas dúvidas e solicitar um orçamento!</p>
@@ -96,7 +95,25 @@
                 Telefone:
               </label>
               <div class="col-xs-12 col-sm-9">
-                <input type="text" id="telefone" name="telefone" class="form-control js-cel-number js-tel-number" placeholder="(55) 55555-5555">
+                <input type="text" id="telefone" name="telefone" class="form-control js-cel-number js-tel-number" placeholder="(55) 55555-5555" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="preferencia" class="col-xs-12 col-sm-3 control-label">
+                Contate-me via:
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <select id="preferencia" name="preferencia" class="form-control" required="">
+                  <option selected="selected" disabled="disabled" value="sem resposta">
+                    Selecione...
+                  </option>
+                  <option value="email">
+                    E-mail, preferencialmente.
+                  </option>
+                  <option value="telefone">
+                    Telefone, preferencialmente.
+                  </option>
+                </select>
               </div>
             </div>
             <div class="form-group">
@@ -104,24 +121,7 @@
                 Assunto:
               </label>
               <div class="col-xs-12 col-sm-9">
-                <select id="assunto" name="assunto" onchange="showfield(this.options[this.selectedIndex].value)" class="form-control" required="">
-                  <option selected="selected" disabled="disabled" value="(Sem assunto)">
-                    Meu site...
-                  </option>
-                  <option value="Meu site já existe e precisa de melhora.">
-                    Já existe e precisa de melhora.
-                  </option>
-                  <option value="Meu site ainda não existe, mas já tenho uma ideia.">
-                    Ainda não existe, mas já tenho uma ideia.
-                  </option>
-                  <option value="Meu site ainda não existe e quero ajuda para pensá-lo.">
-                    Ainda não existe e quero ajuda para pensá-lo.
-                  </option>
-                  <option value="Outro...">
-                    Outro...
-                  </option>
-                </select>
-                <div id="ifOther" class="form-group"></div>
+                <input id="assunto" type="text" name="assunto" class="form-control" required="">
               </div>
             </div>
             <div class="form-group">
@@ -143,9 +143,11 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-5 col-sm-offset-1" id="contato-col-2">
-        <h1>Se preferir,</h1>
-        <p>Contate-me através do e-mail: <strong>contato@cafeamanda.com.br</strong></p>
-        <p>ou do telefone: <strong>(85) 98210-6080</strong>
+        <h4>Se preferir,</h4>
+        <p>Contate-me através do e-mail <strong><a href="mailto:contato@cafeamanda.com.br">contato@cafeamanda.com.br</a></strong></p>
+        <p>Ou dos telefones:</p>
+        <p><strong><a href="tel:(85)982106080">(85) 98210-6080</a></strong> | Fortaleza, CE</p>
+        <p><strong><a href="tel:(21)969349545">(21) 96934-9545</a></strong> | Rio de Janeiro, RJ</p>
         <p><i class="fa fa-exclamation-circle"></i><em> Atendimento em todo o Brasil.</em></p>
       </div>
     </div>
@@ -157,6 +159,7 @@
   </div>
   <!--jQuery-->
   <script src="jquery/dist/jquery.min.js"></script>
+  <script src="jquery/dist/myjquery.js"></script>
   <!--javaScript-->
   <script src="js/bootstrap.min.js"></script>
   <!--googleAnalytics-->
@@ -169,17 +172,5 @@
     ga('send', 'pageview');
   </script>
   <!-- Hidden field in Formulário -->
-  <script type="text/javascript">
-    function showfield(name){
-      if(name=='Outro...') {
-        document.getElementById('ifOther')
-        .innerHTML='<label for="Outro..." class="col-xs-12 col-sm-3 control-label">Qual?</label><div class="col-xs-12 col-sm-9"><input type="text" name="Outro..." id="Outro..." class="form-control" required=""/>';
-    }
-      else {
-        document.getElementById('ifOther')
-        .innerHTML='';
-      }
-    }
-  </script>
 </body>
 </html>

@@ -11,16 +11,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Amanda Café | Front-end Web Developer</title>
 
-    <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Annie+Use+Your+Telescope|Bree+Serif|Comfortaa|Fredericka+the+Great|Crafty+Girls|Jura|Libre+Baskerville|Lobster|Noticia+Text|Pacifico|Playfair+Display|Poiret+One|Quicksand|Raleway|Rochester|Spinnaker|Waiting+for+the+Sunrise|Walter+Turncoat" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -102,7 +93,25 @@
                 Telefone:
               </label>
               <div class="col-xs-12 col-sm-9">
-                <input type="text" id="telefone" name="telefone" class="form-control js-cel-number js-tel-number" placeholder="(55) 55555-5555">
+                <input type="text" id="telefone" name="telefone" class="form-control js-cel-number js-tel-number" placeholder="(55) 55555-5555" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="preferencia" class="col-xs-12 col-sm-3 control-label">
+                Contate-me via:
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <select id="preferencia" name="preferencia" class="form-control" required="">
+                  <option selected="selected" disabled="disabled" value="sem resposta">
+                    Selecione...
+                  </option>
+                  <option value="email">
+                    E-mail, preferencialmente.
+                  </option>
+                  <option value="telefone">
+                    Telefone, preferencialmente.
+                  </option>
+                </select>
               </div>
             </div>
             <div class="form-group">
@@ -135,7 +144,7 @@
                 Mensagem:
               </label>
               <div class="col-xs-12 col-sm-9">
-                <textarea name="mensagem " class="form-control" required="" rows="6"></textarea>
+                <textarea name="mensagem " class="form-control" required="" rows="6" placeholder="Não esqueça de identificar o seu tipo de negócio e o que deseja no seu site."></textarea>
               </div>
             </div>
             <div class="form-group pull-right">
@@ -152,7 +161,7 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <strong>Se preferir::</strong> Contate-me através do telefone <a href="tel:(85)982106080" class="alert-link">(85) 98210-6080</a> ou do email <strong>contato@cafeamanda.com.br</strong>.
+            <strong>Se preferir,</strong> contate-me através dos telefones <a href="tel:(85)982106080" class="alert-link">(85) 98210-6080</a> e <a href="tel:(21)969349545" class="alert-link">(21) 96934-9545</a> ou do email <strong>contato@cafeamanda.com.br</strong>.
             <p><i class="fa fa-exclamation-circle"></i><em> Atendimento em todo o Brasil.</em></p>
           </div>
         </div>
@@ -300,7 +309,7 @@
       </div><!-- lista de vantagens -->
     </div>
     <div class="row row-content">
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3" id="duv-col">
+      <div class="col-xs-12 col-sm-6" id="duv-col">
         <h1 class="text-center" style="font-family:'Poiret One', cursive;">
           <i class="fa fa-question-circle"></i>
           <strong>Dúvidas Frequentes</strong>
@@ -310,12 +319,12 @@
         <div class="panel-group" id="accordionFAQ" role="tablist" aria-multiselectable="true">
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOrcamento">
-              <h3 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordionFAQ" href="#orcamento" aria-expanded="true" aria-controls="orcamento">
+              <a role="button" data-toggle="collapse" data-parent="#accordionFAQ" href="#orcamento" aria-expanded="true" aria-controls="orcamento">
+                <h3 class="panel-title">
                   <i class="fa fa-caret-down"></i>
                   Como é feito o orçamento?
-                </a>
-              </h3>
+                </h3>
+              </a>
             </div>
             <div role="tabpanel" class="panel-collapse collapse" id="orcamento" aria-labelledby="headingOrcamento">
               <div class="panel-body">
@@ -328,12 +337,12 @@
           </div>
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingProcesso">
-              <h3 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordionFAQ" href="#processo" aria-expanded="true" aria-controls="processo">
+              <a role="button" data-toggle="collapse" data-parent="#accordionFAQ" href="#processo" aria-expanded="true" aria-controls="processo">
+                <h3 class="panel-title">
                   <i class="fa fa-caret-down"></i>
                   Como se dá o Processo de Criação do Site?
-                </a>
-              </h3>
+                </h3>
+              </a>
             </div>
             <div role="tabpanel" class="panel-collapse collapse" id="processo" aria-labelledby="headingProcesso">
               <div class="panel-body">
@@ -363,12 +372,12 @@
           </div>
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingManutencao">
-              <h3 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordionFAQ" href="#manutencao" aria-expanded="true" aria-controls="manutencao">
+              <a role="button" data-toggle="collapse" data-parent="#accordionFAQ" href="#manutencao" aria-expanded="true" aria-controls="manutencao">
+                <h3 class="panel-title">
                   <i class="fa fa-caret-down"></i>
                   Como funcionam a Manutenção e a Atualização do site?
-                </a>
-              </h3>
+                </h3>
+              </a>
             </div>
             <div role="tabpanel" class="panel-collapse collapse" id="manutencao" aria-labelledby="headingManutencao">
               <div class="panel-body">
@@ -383,12 +392,12 @@
           </div>
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingPagamento">
-              <h3 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordionFAQ" href="#pagamento" aria-expanded="true" aria-controls="pagamento">
+              <a role="button" data-toggle="collapse" data-parent="#accordionFAQ" href="#pagamento" aria-expanded="true" aria-controls="pagamento">
+                <h3 class="panel-title">
                   <i class="fa fa-caret-down"></i>
                   Quais são as Formas de Pagamento?
-                </a>
-              </h3>
+                </h3>
+              </a>
             </div>
             <div role="tabpanel" class="panel-collapse collapse" id="pagamento" aria-labelledby="headingPagamento">
               <div class="panel-body">
@@ -406,6 +415,35 @@
             </div>
           </div>
         </div><!-- end of Accordion -->
+      </div>
+      <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+        <a id="chamada-jumbo-link" href="blog/index.html">
+          <div id="chamada-blog">
+            <span class="label label-danger pull-right">
+              Novo!
+            </span>
+            <h1>
+              O BLOG da CAFÉ
+            </h1>
+          </div>
+        </a>
+        <div id="chamada-posts-list">
+          <div class="col-xs-12 col-sm-4">
+            <h5 class="text-center">Primeiros Passos</h5>
+            <p> Você resolveu expandir as fronteiras do seu negócio para além da sua região e pensou que um site...</p>
+            <p class="pull-right"><a href="blog/index.html#/primeiros-passos">Continue lendo »</a></p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h5 class="text-center">Conquistando o Usuário</h5>
+            <p>Para consolidar o seu endereço eletrônico na comunidade online, não basta só publicar uma página...</p>
+            <p class="pull-right"><a href="blog/index.html#/conquistando-o-usuario">Continue lendo »</a></p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h5 class="text-center">Designer pra quê?</h5>
+            <p>Com tanta opção de plataforma online para montar site grátis por aí, será que vale a pena gastar dinheiro...</p>
+            <p class="pull-right"><a href="blog/index.html#/designer-pra-que">Continue lendo »</a></p>
+          </div>
+        </div>
       </div>
     </div><!-- row-content -->
   </div><!-- container -->

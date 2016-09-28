@@ -42,7 +42,7 @@
   #contactButton {
     margin-top:40px;
   }
-  .jumbo-blog h1 {
+  .jumbo-home h1 {
     font-size: 80px !important;
   }
   .panel-body {
@@ -103,11 +103,14 @@
   #contato-col-2 {
     text-align: center;
   }
-  .jumbo-blog h1 {
+  .jumbo-home h1 {
     font-size: 48px !important;
   }
   .blog-post-title {
     font-size: 42px;
+  }
+  #duv-col {
+    margin-bottom: 30px;
   }
 }
 
@@ -163,10 +166,13 @@
   #contato-col-2 {
     text-align: center;
   }
-  .jumbo-blog h1 {
+  .jumbo-home h1 {
     font-size: 42px !important;
   }
   .blog-post-title {
     font-size: 36px;
+  }
+  #duv-col {
+    margin-bottom: 30px;
   }
 }
